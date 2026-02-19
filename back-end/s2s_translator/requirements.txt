@@ -1,0 +1,19 @@
+# Speech-to-Speech Translation Module - Additional Requirements
+
+# Core S2S Translation
+transformers>=4.35.0  # For Seamless M4T model
+accelerate>=0.24.0  # For model optimization and device mapping
+sentencepiece>=0.1.99  # Required by Seamless M4T tokenizer
+protobuf>=3.20.0  # For model serialization
+
+# Audio Processing
+librosa>=0.10.0  # For audio duration matching and time stretching
+soundfile>=0.12.1  # For audio I/O
+pydub>=0.25.1  # For audio chunking
+moviepy>=1.0.3  # For video/audio extraction (already in project)
+
+# Memory Optimization
+bitsandbytes>=0.41.0  # For 8-bit quantization (optional, for extreme memory saving)
+
+# Note: These are additional to your existing requirements.txt
+# Make sure to install with: pip install -r s2s_requirements.txt

@@ -1,0 +1,114 @@
+.privacy-container {
+  display: flex;
+  background-color: #0c0c1f;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  background-color: #11112a;
+  width: 220px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #805bff;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #bbb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: block;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: #23234d;
+  color: white;
+}
+
+.privacy-main {
+  flex: 1;
+  padding: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .privacy-main {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #23234d;
+  }
+  
+  .sidebar-title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+  }
+  
+  .menu a {
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  
+  .privacy-main {
+    padding: 1.5rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 0.75rem;
+  }
+  
+  .menu a {
+    min-width: 80px;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .privacy-main {
+    padding: 1rem 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,9 @@
+# Root level folders
+extras/
+models/
+venv/
+.vscode/
+
+# Backend specific
+back-end/.env
+back-end/venv/

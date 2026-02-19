@@ -1,0 +1,154 @@
+.processing-container {
+  display: flex;
+  background-color: #0c0c1f;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  background-color: #11112a;
+  width: 220px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #805bff;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #bbb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: #23234d;
+  color: white;
+}
+
+.processing-main {
+  flex: 1;
+  padding: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.progress-box {
+  background-color: #11112a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #805bff22;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #222;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #805bff;
+  transition: width 0.5s ease-in-out;
+}
+
+.status, .eta {
+  color: #ccc;
+  margin: 0.25rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .processing-main {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .processing-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid #23234d;
+  }
+  
+  .sidebar-title {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+  }
+  
+  .menu a {
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  
+  .processing-main {
+    padding: 1.5rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+  }
+  
+  .progress-box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 0.75rem;
+  }
+  
+  .menu a {
+    min-width: 80px;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .processing-main {
+    padding: 1rem 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.125rem;
+  }
+  
+  .progress-box {
+    padding: 1rem;
+  }
+  
+  .status, .eta {
+    font-size: 0.875rem;
+  }
+}

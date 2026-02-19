@@ -1,0 +1,54 @@
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+__pycache__/
+*.pyc
+staticfiles/
+media/
+
+# Voice Cloning - OpenVoice Checkpoints (large files, download separately)
+voice_cloning/checkpoints/**/*.pth
+voice_cloning/checkpoints/**/*.pt
+voice_cloning/checkpoints/**/checkpoint.*
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
